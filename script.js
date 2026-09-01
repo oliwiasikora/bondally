@@ -49,6 +49,7 @@ const tasks = [
   { text: "Wybierz jedną relację, o którą chcesz zadbać dzisiaj bardziej.", category: "ja", label: "Uważność", time: "2 min" },
   { text: "Zrób pierwszy krok w rozmowie, którą długo odkładałaś.", category: "ja", label: "Uważność", time: "5 min" },
   { text: "Powiedz komuś szczerze, że cieszysz się z tej rozmowy.", category: "ja", label: "Uważność", time: "1 min" },
+  { text: "Powiedz sobie dzisiaj, za co siebie kochasz.", category: "ja", label: "Uważność", time: "2 min" },
 ];
 
 const taskText = document.querySelector("#taskText");
