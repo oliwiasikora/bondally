@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bondally</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="task-panel" aria-labelledby="brand-title">
+        <nav class="topbar" aria-label="Główna nawigacja">
+          <a class="brand" href="#" aria-label="Bondally">
+            <span class="brand-mark" aria-hidden="true">
+              <span class="brand-spark"></span>
+              B
+            </span>
+            <span class="brand-lockup">
+              <span class="brand-name">Bondally</span>
+              <span class="brand-tagline">prawdziwe ludzkie relacje</span>
+            </span>
+          </a>
+          <span class="partner">Bookbesties</span>
+        </nav>
+
+        <div class="intro">
+          <p class="eyebrow">Mały gest na dziś</p>
+          <h1 id="brand-title">Zbuduj jedną relację bliżej.</h1>
+        </div>
+
+        <article class="task-card" aria-live="polite">
+          <div class="task-meta">
+            <span id="taskCategory">Relacja</span>
+            <span id="taskTime">2 min</span>
+          </div>
+          <p id="taskText">Losuję zadanie...</p>
+        </article>
+
+        <div class="actions">
+          <button class="primary" id="drawTask" type="button">
+            <span aria-hidden="true">↻</span>
+            Losuj kolejne
+          </button>
+          <button class="secondary" id="completeTask" type="button">
+            <span aria-hidden="true">✓</span>
+            Wykonane
+          </button>
+        </div>
+
+        <div class="filters" aria-label="Kategorie zadań">
+          <button class="chip active" type="button" data-filter="all">Wszystkie</button>
+          <button class="chip" type="button" data-filter="rodzina">Rodzina</button>
+          <button class="chip" type="button" data-filter="znajomi">Znajomi</button>
+          <button class="chip" type="button" data-filter="obcy">Obcy</button>
+          <button class="chip" type="button" data-filter="ja">Ja</button>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
