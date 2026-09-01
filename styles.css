@@ -102,34 +102,62 @@ button {
 
 .brand-mark {
   position: relative;
-  display: grid;
-  place-items: center;
   width: 42px;
   height: 42px;
   overflow: hidden;
-  color: var(--white);
-  background:
-    linear-gradient(135deg, rgba(255, 79, 174, 0.94), rgba(55, 220, 255, 0.94)),
-    var(--cyan);
-  border: 1px solid rgba(255, 255, 255, 0.46);
-  border-radius: 12px;
+  background: linear-gradient(145deg, #121948 0%, #11163d 48%, #20256a 100%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
   box-shadow:
-    0 0 18px rgba(55, 220, 255, 0.78),
-    0 0 42px rgba(255, 79, 174, 0.32);
-  font-size: 1.32rem;
-  line-height: 1;
-  transform: rotate(-6deg);
+    inset 0 0 18px rgba(55, 220, 255, 0.08),
+    0 0 18px rgba(55, 220, 255, 0.38),
+    0 0 42px rgba(255, 79, 174, 0.28);
 }
 
-.brand-spark {
+.brand-mark::before {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  content: "";
+  background: #d7c6ff;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(215, 198, 255, 0.76);
+}
+
+.brand-mark::after {
   position: absolute;
   top: 7px;
-  right: 8px;
-  width: 7px;
-  height: 7px;
-  background: var(--white);
+  right: 9px;
+  width: 10px;
+  height: 10px;
+  content: "";
+  background: #ff9c93;
   border-radius: 50%;
-  box-shadow: 0 0 14px rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 12px rgba(255, 156, 147, 0.76);
+}
+
+.person {
+  position: absolute;
+  bottom: 7px;
+  display: block;
+  border-radius: 18px 18px 10px 10px;
+}
+
+.person-left {
+  left: 8px;
+  width: 19px;
+  height: 20px;
+  background: linear-gradient(135deg, #ece1ff 0%, #8c7dff 44%, #5d6df2 100%);
+  transform: rotate(5deg);
+}
+
+.person-right {
+  right: 8px;
+  width: 18px;
+  height: 24px;
+  background: linear-gradient(155deg, #ffb0ad 0%, #ff7fa8 58%, #f06f93 100%);
 }
 
 .brand-name {
